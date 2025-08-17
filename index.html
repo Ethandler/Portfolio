@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Winter Herrera — Makeup Artist</title>
+  <meta name="description" content="Portfolio of Winter Herrera — makeup artist specializing in bridal, editorial, and alternative looks." />
+  <meta name="theme-color" content="#0b0b0c" />
+  <meta property="og:title" content="Winter Herrera — Makeup Artist" />
+  <meta property="og:description" content="Portfolio of Winter Herrera — makeup artist specializing in bridal, editorial, and alternative looks." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.jpg" />
+  <meta property="og:url" content="https://your-domain.example" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            base: {
+              900: '#0b0b0c', // near-black (goth)
+              800: '#131316',
+              700: '#1b1b1f',
+              100: '#f3f4f6'
+            },
+            accent: {
+              500: '#ff4fa3', // hot pink
+              400: '#ff6ab2',
+              300: '#ff8cc5'
+            }
+          },
+          fontFamily: {
+            display: ['Cinzel', 'serif'],
+            sans: ['Inter', 'system-ui', 'ui-sans-serif', 'Segoe UI', 'Roboto']
+          },
+          boxShadow: {
+            glow: '0 0 0 3px rgba(255,79,163,0.25)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Alpine.js -->
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <style>
+    :root { color-scheme: dark; }
+    html, body { background: #0b0b0c; }
+    /* Subtle noise background for texture */
+    body::before {
+      content: '';
+      position: fixed; inset: 0; pointer-events: none;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23n)" opacity="0.03"/></svg>');
+      mix-blend-mode: soft-light;
+    }
+  </style>
+
+  <!-- JSON-LD (optional but nice for SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Winter Herrera",
+    "jobTitle": "Makeup Artist",
+    "url": "https://your-domain.example",
+    "sameAs": [
+      "https://instagram.com/winny.mua"
+    ]
+  }
+  </script>
+</head>
+<body class="text-base-100/90 antialiased">
+  <!-- NAV / HERO -->
+  <header class="relative">
+    <div class="absolute inset-0 bg-gradient-to-b from-base-900 via-base-800 to-base-900"></div>
+    <div class="relative max-w-6xl mx-auto px-6 pt-10 pb-12">
+      <nav class="flex items-center justify-between">
+        <a href="#top" class="font-display text-2xl tracking-wide text-accent-500 hover:text-accent-300 transition">WINTER</a>
+        <div class="hidden sm:flex items-center gap-5">
+          <a href="#gallery" class="hover:text-accent-300">Gallery</a>
+          <a href="#about" class="hover:text-accent-300">About</a>
+          <a href="#contact" class="hover:text-accent-300">Contact</a>
+          <a href="https://instagram.com/winny.mua" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-accent-400 hover:text-accent-300">
+            <!-- Instagram icon -->
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.51 5.51 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zM17.75 6a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 17.75 6z"/></svg>
+            <span>@winny.mua</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="mt-16 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="font-display text-5xl sm:text-6xl text-white leading-tight">
+            Winter Herrera
+          </h1>
+          <p class="mt-4 text-lg text-base-100/80">Makeup artist specializing in <span class="text-accent-400 font-semibold">bridal</span>, <span class="text-accent-400 font-semibold">editorial</span>, and <span class="text-accent-400 font-semibold">alternative</span> looks.</p>
+          <div class="mt-6 flex flex-wrap items-center gap-3">
+            <a href="#gallery" class="px-5 py-2.5 bg-accent-500/90 hover:bg-accent-400 text-black font-semibold rounded-xl shadow-glow transition">View Gallery</a>
+            <a href="#contact" class="px-5 py-2.5 border border-accent-500/60 hover:border-accent-300 text-accent-300 rounded-xl transition">Book Winter</a>
+          </div>
+        </div>
+        <div>
+          <div class="relative rounded-3xl overflow-hidden ring-1 ring-white/10">
+            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=1400&auto=format&fit=crop" alt="Editorial makeup look — soft neon pink highlight." class="w-full h-[320px] object-cover">
+            <div class="absolute inset-0 bg-gradient-to-tr from-base-900/60 via-transparent to-accent-500/10"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- GALLERY -->
+  <main id="gallery" x-data="gallery()" class="relative">
+    <div class="max-w-6xl mx-auto px-6 py-14">
+      <div class="flex items-center justify-between flex-wrap gap-4">
+        <h2 class="font-display text-3xl text-white">Gallery</h2>
+        <!-- Filters -->
+        <div class="flex flex-wrap items-center gap-2" role="tablist" aria-label="Gallery filters">
+          <button @click="filter = 'All'" :class="btnClass('All')" class="px-3 py-1.5 rounded-full">All</button>
+          <button @click="filter = 'Bridal'" :class="btnClass('Bridal')" class="px-3 py-1.5 rounded-full">Bridal</button>
+          <button @click="filter = 'Editorial'" :class="btnClass('Editorial')" class="px-3 py-1.5 rounded-full">Editorial</button>
+          <button @click="filter = 'Alt'" :class="btnClass('Alt')" class="px-3 py-1.5 rounded-full">Alt Glam</button>
+          <button @click="filter = 'Stage'" :class="btnClass('Stage')" class="px-3 py-1.5 rounded-full">Stage</button>
+        </div>
+      </div>
+
+      <!-- Masonry-ish grid using responsive rows/cols -->
+      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" role="list">
+        <template x-for="(item, idx) in filtered" :key="idx">
+          <figure class="group relative cursor-pointer rounded-2xl overflow-hidden ring-1 ring-white/10" @click="open(idx)" role="listitem">
+            <img :src="item.src" :alt="item.alt" loading="lazy" class="w-full h-64 object-cover transition group-hover:scale-[1.03]"/>
+            <figcaption class="absolute inset-x-0 bottom-0 p-3 text-sm bg-gradient-to-t from-base-900/80 to-transparent">
+              <span class="text-white font-semibold" x-text="item.title"></span>
+              <span class="ml-2 text-accent-300/90" x-text="'• ' + item.tag"></span>
+            </figcaption>
+          </figure>
+        </template>
+      </div>
+
+      <!-- Lightbox Modal -->
+      <div x-show="isOpen" x-transition.opacity class="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4" @keydown.escape.window="close()" @click.self="close()" aria-modal="true" role="dialog">
+        <div class="max-w-4xl w-full">
+          <div class="relative bg-base-800 rounded-2xl overflow-hidden ring-1 ring-white/10">
+            <img :src="current.src" :alt="current.alt" class="w-full max-h-[80vh] object-contain bg-black"/>
+            <div class="absolute top-3 right-3 flex items-center gap-2">
+              <button @click="prev()" class="px-3 py-1.5 rounded-full bg-base-900/70 hover:bg-base-900 text-white">Prev</button>
+              <button @click="next()" class="px-3 py-1.5 rounded-full bg-base-900/70 hover:bg-base-900 text-white">Next</button>
+              <button @click="close()" class="px-3 py-1.5 rounded-full bg-accent-500/90 text-black font-semibold">Close</button>
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-white" x-text="current.title"></h3>
+              <p class="mt-1 text-sm text-base-100/80" x-text="current.caption"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="border-t border-white/10 bg-gradient-to-b from-base-900 to-base-800">
+      <div class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-start">
+        <div>
+          <h2 class="font-display text-3xl text-white">About</h2>
+          <p class="mt-4 text-base leading-relaxed text-base-100/90">
+            Winter Herrera is a Phoenix-based makeup artist blending refined technique with
+            alternative aesthetics. Comfortable on set and on site, she works across bridal,
+            editorial, and stage looks with a focus on skin-first prep, color theory, and
+            hygienic practice.
+          </p>
+          <ul class="mt-6 space-y-2 text-base-100/80">
+            <li><span class="text-accent-300">•</span> Bridal · Editorial · Alt Glam · Stage</li>
+            <li><span class="text-accent-300">•</span> Inclusive shade matching for diverse skin tones</li>
+            <li><span class="text-accent-300">•</span> Fast, collaborative, and client-centered</li>
+          </ul>
+        </div>
+        <div class="relative">
+          <div class="rounded-3xl overflow-hidden ring-1 ring-white/10">
+            <img src="https://images.unsplash.com/photo-1551854838-212c50b4c184?q=80&w=1400&auto=format&fit=crop" alt="Bridal soft glam look with luminous skin." class="w-full h-[360px] object-cover">
+            <div class="absolute inset-0 bg-gradient-to-tr from-base-900/60 via-transparent to-accent-500/10"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="border-t border-white/10">
+      <div class="max-w-6xl mx-auto px-6 py-16">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <h2 class="font-display text-3xl text-white">Contact</h2>
+            <p class="mt-4 text-base text-base-100/90">Booking and inquiries welcome. Please include event date, location, headcount, and any reference looks.</p>
+            <div class="mt-6 flex flex-wrap items-center gap-3">
+              <a href="mailto:winny.v.herrera@gmail.com" class="px-5 py-2.5 bg-accent-500/90 hover:bg-accent-400 text-black font-semibold rounded-xl shadow-glow transition">Email Winter</a>
+              <a href="https://instagram.com/winny.mua" target="_blank" rel="noopener" class="px-5 py-2.5 border border-accent-500/60 hover:border-accent-300 text-accent-300 rounded-xl transition">Instagram</a>
+            </div>
+          </div>
+          <form class="bg-base-800/70 p-6 rounded-2xl ring-1 ring-white/10 backdrop-blur">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <label class="block">
+                <span class="text-sm text-base-100/80">Name</span>
+                <input type="text" placeholder="Your name" class="mt-1 w-full rounded-xl bg-base-900/70 border border-white/10 focus:outline-none focus:ring-2 focus:ring-accent-500/50 px-3 py-2" required>
+              </label>
+              <label class="block">
+                <span class="text-sm text-base-100/80">Email</span>
+                <input type="email" placeholder="you@example.com" class="mt-1 w-full rounded-xl bg-base-900/70 border border-white/10 focus:outline-none focus:ring-2 focus:ring-accent-500/50 px-3 py-2" required>
+              </label>
+              <label class="block sm:col-span-2">
+                <span class="text-sm text-base-100/80">Message</span>
+                <textarea rows="4" placeholder="Tell me about your event or project…" class="mt-1 w-full rounded-xl bg-base-900/70 border border-white/10 focus:outline-none focus:ring-2 focus:ring-accent-500/50 px-3 py-2"></textarea>
+              </label>
+            </div>
+            <p class="mt-3 text-xs text-base-100/60">This demo form is static. Replace with a mailto link, Netlify form, or a lightweight backend if needed.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="border-t border-white/10">
+      <div class="max-w-6xl mx-auto px-6 py-10 text-sm text-base-100/60 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p>© <span id="year"></span> Winter Herrera. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="#top" class="hover:text-accent-300">Back to top</a>
+          <a href="/Winter_Herrera_Resume.pdf" class="hover:text-accent-300">Résumé (PDF)</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function gallery() {
+      return {
+        filter: 'All',
+        items: [
+          { src: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=1200&auto=format&fit=crop', alt: 'Alt glam with graphic liner', title: 'Graphic Liner', tag: 'Alt', caption: 'High-contrast liner with soft gloss lip.' },
+          { src: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop', alt: 'Soft bridal glam', title: 'Soft Bridal', tag: 'Bridal', caption: 'Skin-first prep, luminous finish.' },
+          { src: 'https://images.unsplash.com/photo-1544441893-675973e31985?q=80&w=1200&auto=format&fit=crop', alt: 'Editorial color pop', title: 'Neon Pop', tag: 'Editorial', caption: 'Monochrome neon with dewy highlight.' },
+          { src: 'https://images.unsplash.com/photo-1512207846876-fe8c43a58e28?q=80&w=1200&auto=format&fit=crop', alt: 'Stage-ready glam', title: 'Stage Glow', tag: 'Stage', caption: 'High-impact shimmer for distance viewing.' },
+          { src: 'https://images.unsplash.com/photo-1532712938310-34cb3982ef74?q=80&w=1200&auto=format&fit=crop', alt: 'Editorial feathers', title: 'Feathered Edge', tag: 'Editorial', caption: 'Textured detail with clean skin.' },
+          { src: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=1200&auto=format&fit=crop', alt: 'Classic bridal', title: 'Classic Veil', tag: 'Bridal', caption: 'Timeless neutral palette.' }
+        ],
+        get filtered() {
+          if (this.filter === 'All') return this.items
+          return this.items.filter(i => i.tag === this.filter)
+        },
+        isOpen: false,
+        index: 0,
+        get current() { return this.items[this.index] || {} },
+        open(i) { this.index = i; this.isOpen = true },
+        close() { this.isOpen = false },
+        next() { this.index = (this.index + 1) % this.items.length },
+        prev() { this.index = (this.index - 1 + this.items.length) % this.items.length },
+        btnClass(name) { return (this.filter === name ? 'bg-accent-500/90 text-black font-semibold' : 'bg-base-800 border border-white/10 text-base-100/80 hover:text-accent-300') }
+      }
+    }
+  </script>
+</body>
+</html>
